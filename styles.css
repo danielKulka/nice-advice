@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins&family=Righteous&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Righteous', cursive;
+}
+
+html, body{
+  width: 100%;
+  height: 100vh;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(./assets/relax.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background: linear-gradient(-160deg, rgba(4, 104, 255, 0.100),30%,rgba(4, 104, 255, 600));
+  border-radius: .5rem;
+  width: 60%;
+  height: 40%;
+  color: rgb(255, 140, 0);
+}
+
+section h1{
+  font-size: 2rem;
+  text-shadow: black 3px 4px 2px;
+}
+
+button#change-advice{
+  font-size: 1.1rem;
+  padding: .3rem .6rem;
+  color:rgb(4, 104, 255);
+  background-color: rgb(255, 140, 0);
+  border: 6px groove rgb(4, 63, 255);
+  cursor: pointer;
+}
+
+p#phrase{
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: .1rem;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.500) 2px 3px 2px;
+  width: 90%;
+}

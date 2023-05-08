@@ -17,3 +17,10 @@ getPhrase();
 
 
 
+function playAudio(){
+  const audio = document.querySelector('audio');
+  audio.volume = .3;
+  audio.play();
+  audio.loop = true;
+}
+playAudio();

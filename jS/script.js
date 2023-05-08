@@ -9,16 +9,10 @@ async function getPhrase(){
 let button = document.querySelector("#change-advice");
 let newAdvice = function(){
   getPhrase();
+  const audioPlay = new Audio("assets/waterfall.mp3");  
+  audioPlay.volume = .1;
+  audioPlay.loop = true;
+  audioPlay.play();
 }
 
-button.addEventListener('click', newAdvice);
-
-getPhrase();
-
-function playAudio(){
-  const audio = document.querySelector('audio');
-  audio.volume = .1;
-  audio.loop = true;
-  audio.play();
-}
-playAudio();
+button.addEventListener('click', newAdvice);  

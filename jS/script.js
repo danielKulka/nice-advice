@@ -15,11 +15,9 @@ button.addEventListener('click', newAdvice);
 
 getPhrase();
 
-
-
 function playAudio(){
   const audio = document.querySelector('audio');
-  audio.volume = .3;
+  audio.volume = .1;
   audio.play();
   audio.loop = true;
 }

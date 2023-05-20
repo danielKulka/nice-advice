@@ -5,14 +5,15 @@ async function getPhrase(){
   const data = await answer.json();
   newPhrase.innerHTML = data.slip.advice;
 }
-
+getPhrase();
 let button = document.querySelector("#change-advice");
 let newAdvice = function(){
   getPhrase();
-  const audioPlay = new Audio("assets/waterfall.mp3");  
-  audioPlay.volume = .1;
-  audioPlay.loop = true;
-  audioPlay.play();
 }
 
 button.addEventListener('click', newAdvice);  
+
+let audio = document.querySelector("#audio");
+
+audio.volume = .2;
+audio.loop = true;

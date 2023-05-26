@@ -17,6 +17,6 @@ function playAudio(event){
   let audio = document.querySelector("#audio");
   audio.volume = 0.2;
   audio.loop = true;
-  event = audio.play();
+  audio.play(event);
 }
-playAudio();
+document.body.addEventListener("click", playAudio);

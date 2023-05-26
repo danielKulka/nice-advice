@@ -13,7 +13,10 @@ let newAdvice = function(){
 
 button.addEventListener('click', newAdvice);  
 
-let audio = document.querySelector("#audio");
-
-audio.volume = .2;
-audio.loop = true;
+function playAudio(event){
+  let audio = document.querySelector("#audio");
+  audio.volume = 0.2;
+  audio.loop = true;
+  event = audio.play();
+}
+playAudio();
